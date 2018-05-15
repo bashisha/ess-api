@@ -11,9 +11,9 @@ namespace ess_api.Controllers
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<object> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new object[] { new { name = "value1" }, new { name = "value2" } };
         }
 
         // GET api/values/5
